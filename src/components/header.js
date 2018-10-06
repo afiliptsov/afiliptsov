@@ -4,11 +4,11 @@ import { Link } from 'gatsby'
 const Header = ({ siteTitle }) => (
   <div style={{
     position: "relative",
-    height: '90vh',
+    height: '75vh',
   }}>
     <div style={{
       position: "absolute",
-      height: '90vh',
+      height: '75vh',
       clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
       width: '100vw',
       background: 'blue',
@@ -19,7 +19,7 @@ const Header = ({ siteTitle }) => (
         position: "absolute",
         background: 'rebeccapurple',
         marginBottom: '1.45rem',
-        height: '90vh',
+        height: '75vh',
         width: '100vw',
         clipPath: "polygon(0 0, 100% 0, 100% 70%, 0 100%)",
       }}

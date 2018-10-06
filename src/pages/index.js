@@ -1,15 +1,22 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import './index.css'
+
 
 import Layout from '../components/layout'
 
 const IndexPage = () => (
-  <Layout>
-    <header>
-      <h1>Hi people</h1>
-      <p>Welcome to your new Gatsby site.</p>
-      <p>Now go build something great.</p>
+  <Layout style={{ width: '100vw' }}>
+    <header style={{
+      clipPath: "polygon(0 0, 100% 0, 100% 71%, 0 100%)",
+      backgroundColor: "orange",
+      width: "100vw"
+    }}>
+    <div>
+    </div>
+    <div>
+    </div>
+    <div>
+    </div>
       <Link to="/page-2/">Go to page 2</Link>
     </header>
   </Layout>
