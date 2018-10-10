@@ -13,7 +13,15 @@ import {
   faFacebook,
   faYoutube,
 } from '@fortawesome/fontawesome-free-brands'
+
 import reactSvg from '../images/icons/react.svg'
+import css3 from '../images/icons/react.svg'
+import git from '../images/icons/git.svg'
+import github from '../images/icons/github-2.svg'
+import html5 from '../images/icons/html5.svg'
+import javascript from '../images/icons/javascript.svg'
+import mobx from '../images/icons/mobx.svg'
+import nodejs from '../images/icons/nodejs-1.svg'
 
 const iconStyle = {
   color: 'white',
@@ -115,7 +123,9 @@ const Header = ({ siteTitle }) => (
           textDecoration: 'none',
         }}
       >
-        <img src={reactSvg} alt="" />
+        <div>
+          <img src={reactSvg} alt="" />
+        </div>
         <br />
         {siteTitle}
       </Link>
