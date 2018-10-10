@@ -1,54 +1,126 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import background from '../images/Background_header.png'
+import anton from '../images/Anton_Filiptsov.jpeg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHeart as heartRegular } from '@fortawesome/free-regular-svg-icons'
+import { faFile } from '@fortawesome/free-solid-svg-icons'
+import './header.scss'
+import {
+  faLinkedin,
+  faGithub,
+  faInstagram,
+  faFacebook,
+  faYoutube,
+} from '@fortawesome/fontawesome-free-brands'
+import reactSvg from '../images/icons/react.svg'
 
+const iconStyle = {
+  color: 'white',
+  fontSize: '2rem',
+  margin: '10px',
+}
 const Header = ({ siteTitle }) => (
-  <div style={{
-    position: "relative",
-    height: '75vh',
-  }}>
-    <div style={{
-      position: "absolute",
+  <div
+    style={{
       height: '75vh',
-      clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
-      width: '100vw',
-      background: 'blue',
-    }}>
-    </div>
+      backgroundImage: '../images/Background_header.png',
+    }}
+  >
+    <img
+      src={background}
+      alt=""
+      style={{ position: 'absolute', height: '75%' }}
+    />
     <div
       style={{
-        position: "absolute",
-        background: 'rebeccapurple',
-        marginBottom: '1.45rem',
-        height: '75vh',
-        width: '100vw',
-        clipPath: "polygon(0 0, 100% 0, 100% 70%, 0 100%)",
+        position: 'relative',
+        top: '10%',
+        margin: '0 auto',
+        width: '60%',
       }}
     >
-
       <div
         style={{
+          position: 'absolute',
+          position: 'relative',
+          width: '150px',
           margin: '0 auto',
-          maxWidth: 960,
-          padding: '1.45rem 1.0875rem',
+          height: '150px',
+          borderRadius: '50%',
+          border: '2px solid grey',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center center',
+          backgroundSize: 'cover',
+          backgroundImage:
+            'url("https://media.licdn.com/dms/image/C5603AQFuXctXoDtWEg/profile-displayphoto-shrink_200_200/0?e=1544054400&v=beta&t=37_DeALhbrC8lFiYZ5CYwv8-RchuT0xbISeLpJVIgPM")',
+        }}
+      />
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          color: 'white',
         }}
       >
-        <h1 style={{ margin: 0 }}>
-          <Link
-            to="/"
-            style={{
-              color: 'white',
-              textDecoration: 'none',
-            }}
-          >
-
-            <br />
-            {siteTitle}
-          </Link>
-        </h1>
+        <FontAwesomeIcon icon={faLinkedin} style={iconStyle} />
+        <FontAwesomeIcon icon={faGithub} style={iconStyle} />
+        <FontAwesomeIcon icon={faInstagram} style={iconStyle} />
+        <FontAwesomeIcon icon={faFacebook} style={iconStyle} />
+        <FontAwesomeIcon icon={faYoutube} style={iconStyle} />
+        <FontAwesomeIcon icon={faFile} style={iconStyle} />
+      </div>
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+        }}
+      >
+        <div
+          style={{
+            width: '40%',
+            textAlign: 'center',
+            borderBottom: '3px solid #ffbe58',
+            backgroundColor: '#ffffff0a',
+            width: '250px',
+            height: '70px',
+          }}
+        >
+          <h5 style={{ color: 'white', marginTop: '20px' }}>
+            FullStack Developer
+          </h5>
+        </div>
+        <div
+          style={{
+            width: '40%',
+            textAlign: 'center',
+            borderBottom: '3px solid #ffbe58',
+            backgroundColor: '#ffffff0a',
+            width: '250px',
+            height: '70px',
+          }}
+        >
+          <h5 style={{ color: 'white', marginTop: '20px' }}>
+            QA Automation Engineer
+          </h5>
+        </div>
       </div>
     </div>
+    <div />
+    <h1 style={{ margin: 0 }}>
+      <Link
+        to="/"
+        style={{
+          color: 'white',
+          textDecoration: 'none',
+        }}
+      >
+        <img src={reactSvg} alt="" />
+        <br />
+        {siteTitle}
+      </Link>
+    </h1>
   </div>
-
 )
 
 export default Header
