@@ -20,6 +20,7 @@ import git from '../images/icons/git.svg'
 import github from '../images/icons/github-2.svg'
 import html5 from '../images/icons/html5.svg'
 import javascript from '../images/icons/javascript.svg'
+import mobx from '../images/icons/mobx.svg'
 
 const iconStyle = {
   color: 'white',
