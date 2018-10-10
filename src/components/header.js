@@ -22,6 +22,7 @@ import html5 from '../images/icons/html5.svg'
 import javascript from '../images/icons/javascript.svg'
 import mobx from '../images/icons/mobx.svg'
 import nodejs from '../images/icons/nodejs-1.svg'
+import redux from '../images/icons/redux.svg'
 
 const iconStyle = {
   color: 'white',
